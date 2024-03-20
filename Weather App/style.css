@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+body.weather-clouds {
+  background-image: url('images/cloudy_bg.jpg');
+}
+
+body.weather-rain {
+  background-image: url('images/rainy_bg.jpg');
+}
+
+body.weather-clear {
+  background-image: url('images/clear_bg.jpg');
+}
+
+body.weather-drizzle,
+body.weather-mist {
+  background-image: url('images/drizzle_mist_bg.jpg');
+}
+
+.card{
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #ff0000, #fc024d);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background:#ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background:#ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img{
+  width: 16px;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather{
+  display: none;
+}
+
+.error{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+  align-items: center;
+  color: rgb(2, 2, 2);
+}
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links {
+    gap: 17%;
+    list-style: square;
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+  
+a:hover {
+    color: rgb(4, 121, 255);
+    text-decoration: underline;
+    text-underline-offset: 80%;
+    text-decoration-color: rgb(4, 121, 255);
+}
+  
+.logo {
+    font-size: 200%;
+    color:aliceblue
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#contactForm {
+  padding: 2vh 10rem;
+  background: linear-gradient(135deg, #ff0000, #fc024d);
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+}
+
+#contactForm h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 0.5rem;
+}
+
+#contact-form input[type="submit"] {
+  padding: 1rem 2rem;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: rgb(4, 121, 255);
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+#contact-form button {
+  align-self: flex-end;
+}
+
+footer {
+  height: 7vh;
+  margin: 0;
+  color:rgb(0, 0, 0);
+  background-color: #555;
+}
+
+header {
+  color:rgb(0, 0, 0);
+  background-color: #555;
+}
+
+footer p {
+  text-align: center;
+}

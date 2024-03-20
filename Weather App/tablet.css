@@ -1,0 +1,79 @@
+/* Default styles */
+
+/* Add media query for tablet screens */
+@media screen and (max-width: 768px) {
+    .card {
+      max-width: 90%; /* Adjust card width for smaller screens */
+      padding: 30px 25px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* Add media query for mobile screens */
+  @media screen and (max-width: 480px) {
+    .card {
+      max-width: 100%; /* Adjust card width for very small screens */
+      padding: 20px 15px; /* Adjust padding for very small screens */
+    }
+  
+    .search input {
+      padding: 10px; /* Adjust input padding for smaller screens */
+      font-size: 16px; /* Adjust input font size for smaller screens */
+    }
+  
+    .search button {
+      width: 50px; /* Adjust button width for smaller screens */
+      height: 50px; /* Adjust button height for smaller screens */
+    }
+  
+    .weather h1 {
+      font-size: 60px; /* Adjust heading font size for smaller screens */
+    }
+  
+    .weather h2 {
+      font-size: 35px; /* Adjust subheading font size for smaller screens */
+    }
+  
+    .details {
+      margin-top: 30px; /* Adjust margin top for smaller screens */
+    }
+  
+    .col img {
+      width: 30px; /* Adjust icon size for smaller screens */
+    }
+  
+    .humidity,
+    .wind {
+      font-size: 24px; /* Adjust text size for smaller screens */
+    }
+  
+    #contactForm {
+      padding: 5vh 2rem; /* Adjust padding for smaller screens */
+    }
+  
+    #contactForm h2 {
+      font-size: 2rem; /* Adjust heading font size for smaller screens */
+    }
+  
+    #contact-form label {
+      font-size: 1rem; /* Adjust label font size for smaller screens */
+    }
+  
+    #contact-form input,
+    #contact-form textarea {
+      padding: 0.6rem; /* Adjust input and textarea padding for smaller screens */
+      font-size: 0.9rem; /* Adjust input and textarea font size for smaller screens */
+    }
+  
+    #contact-form input[type="submit"] {
+      padding: 0.8rem 1.5rem; /* Adjust button padding for smaller screens */
+    }
+  
+    footer {
+      height: 10vh; /* Adjust footer height for smaller screens */
+    }
+  
+    footer p {
+      font-size: 0.8rem; /* Adjust footer text size for smaller screens */
+    }
+  }
+  

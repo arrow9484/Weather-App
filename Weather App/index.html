@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Weather App</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#card">Search</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <nav id="search">
+      <div class="card">
+        <div class="search">
+          <input type="text" placeholder="Search for City" spellcheck="false">
+          <button><img src="images/search.png" width="20" height="20"></button>
+        </div>
+        <div class="error">
+          <p>Invalid Search</p>
+        </div>
+        <div class="weather"><img src="images/rain.png" class="weather-icon">
+          <h1 class="temp"></h1>
+          <h2 class="city"></h2>
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png">
+              <div>
+                <p class="humidity"></p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png">
+              <div>
+                <p class="wind"></p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav id="feedback">
+      <section id="contactForm">
+        <h2>Contact Form</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+      </section>
+    </nav>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#search">Search</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
